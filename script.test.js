@@ -1,24 +1,24 @@
 const { sum, subtract, multiply, divide } = require('./script');
 
-test('adds 1 + 2 to equal 3', () => {
+test('sumamos 1 + 2 que sera 3', () => {
   expect(sum(1, 2)).toBe(3);
 });
 
-test('subtracts 5 - 2 to equal 3', () => {
+test('restamos 5 - 2 que sera 3', () => {
   expect(subtract(5, 2)).toBe(3);
 });
 
-test('multiplies 2 * 3 to equal 6', () => {
+test('multiplicas 2 * 3 que sera 6', () => {
   expect(multiply(2, 3)).toBe(6);
 });
 
-test('divides 6 / 2 to equal 3', () => {
+test('divides 6 / 2 que sera 3', () => {
   expect(divide(6, 2)).toBe(3);
 });
 
-test('dividing by zero throws an error', () => {
+test('dividir entre cero da erros', () => {
   expect(() => {
     divide(1, 0);
-  }).toThrow('Cannot divide by zero');
+  }).toThrow('No se puede dividir entre 0');
 });
 
